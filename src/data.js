@@ -10,7 +10,7 @@ const mov00 = ["tt0180093","tt0120903","tt0249462","tt0289879","tt0209144","tt02
 const mov80Arr = [];
 
 for(let i = 0; i < mov80.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + mov80[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + mov80[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     mov80Arr[i] = dataAsJSON;
@@ -20,7 +20,7 @@ for(let i = 0; i < mov80.length; i++){
 const mov90Arr = [];
 
 for(let i = 0; i < mov90.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + mov90[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + mov90[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     mov90Arr[i] = dataAsJSON;
@@ -30,7 +30,7 @@ for(let i = 0; i < mov90.length; i++){
 const mov00Arr = [];
 
 for(let i = 0; i < mov00.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + mov00[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + mov00[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     mov00Arr[i] = dataAsJSON;
@@ -41,7 +41,7 @@ for(let i = 0; i < mov00.length; i++){
 const series80Arr = [];
 
 for(let i = 0; i < series80.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + series80[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + series80[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     series80Arr[i] = dataAsJSON;
@@ -51,7 +51,7 @@ for(let i = 0; i < series80.length; i++){
 const series90Arr = [];
 
 for(let i = 0; i < series90.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + series90[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + series90[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     series90Arr[i] = dataAsJSON;
@@ -61,7 +61,7 @@ for(let i = 0; i < series90.length; i++){
 const series00Arr = [];
 
 for(let i = 0; i < series00.length; i++){
-    fetch('http://www.omdbapi.com/?i=' + series00[i] + '&apikey=c46a7038').then( (data) => {
+    fetch('https://www.omdbapi.com/?i=' + series00[i] + '&apikey=c46a7038').then( (data) => {
     return data.json();
     }).then((dataAsJSON) => {
     series00Arr[i] = dataAsJSON;
@@ -77,7 +77,7 @@ const randomBtn =() => {
 let randomAll = [];
 let i, r;
    for (i = 0; i < allContent.length; i++) randomAll[i] = i;
-   for (i = 0; i < 6; i++) {
+   for (i = 0; i < 4; i++) {
    r = Math.floor(Math.random() * randomAll.length);
    random.push(allContent[randomAll[r]]);
    randomAll.splice(r, 1);
